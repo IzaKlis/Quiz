@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="button_true">Prawda</string>
-    <string name="button_false">Fałsz</string>
-    <string name="button_next">Następne</string>
+    <string name="app_name">QUIZ</string>
+    <string name="button_true">PRAWDA</string>
+    <string name="button_false">FAŁSZ</string>
+    <string name="button_next">NASTĘPNE</string>
     <string name="q1">Warszawa jest stolicą Polski</string>
     <string name="q2">Rotterdam jest stolicą Holandii</string>
     <string name="q3">Praga jest stolicą Danii</string>
@@ -12,4 +12,5 @@
     <string name="q7">Bruksela jest stolicą Belgii</string>
     <string name="correct_ans">Poprawna odpowiedź</string>
     <string name="incorrect_ans">Błędna odpowiedź</string>
+    <string name="score_message">Twój wynik: %1$d z %2$d pytań</string>
 </resources>
