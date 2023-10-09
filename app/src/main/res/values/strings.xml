@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="button_true">Prawda</string>
+    <string name="button_false">Fałsz</string>
+    <string name="button_next">Następne</string>
+    <string name="q1">Warszawa jest stolicą Polski</string>
+    <string name="q2">Rotterdam jest stolicą Holandii</string>
+    <string name="q3">Praga jest stolicą Danii</string>
+    <string name="q4">Dublin jest stolicą Irlandii</string>
+    <string name="q5">Lizbona jest stolicą Hiszpanii</string>
+    <string name="q6">Wilno jest stolicą Litwy</string>
+    <string name="q7">Bruksela jest stolicą Belgii</string>
+    <string name="correct_ans">Poprawna odpowiedź</string>
+    <string name="incorrect_ans">Błędna odpowiedź</string>
+</resources>
