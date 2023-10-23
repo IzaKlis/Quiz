@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     public static final String KEY_EXTRA_ANSWER = "CorrectAnswer";
     private static final String KEY_CURRENT_INDEX = "CurrentIndex";
     private static final int REQUEST_CODE_HINT = 0;
-    private static String tag="MainActivity";
+    private static final String tag = "MainActivity";
 
-    private Button trueButton, falseButton, nextButton,hintButtonMain;
+    private Button trueButton, falseButton, nextButton, hintButtonMain;
 
     private TextView questionTextView;
     private int currentIndex = 0;
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             new Question(R.string.q6, true),
             new Question(R.string.q7, true)
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 currentIndex = (currentIndex + 1) % questions.length;
-                answerWasShown=false;
+                answerWasShown = false;
                 setNextQuestion();
                 checked = false;
 
@@ -83,17 +84,18 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, PromptActivity.class);
             boolean correctAnswer = questions[currentIndex].isTrueAnswer();
             intent.putExtra(KEY_EXTRA_ANSWER, correctAnswer);
-            startActivityForResult(intent,REQUEST_CODE_HINT);
+            startActivityForResult(intent, REQUEST_CODE_HINT);
         });
         setNextQuestion();
     }
 
     private void checkAnswer(boolean userAnswer) {
         boolean correctAnswer = questions[currentIndex].isTrueAnswer();
-        int resultMessageId=0;
-        if(answerWasShown){
-            resultMessageId=R.string.answer_was_shown;
-        }else{
+        int resultMessageId = 0;
+        System.out.println(resultMessageId);
+        if (answerWasShown) {
+            resultMessageId = R.string.answer_was_shown;
+        } else {
             resultMessageId = userAnswer == correctAnswer ? R.string.correct_ans : R.string.incorrect_ans;
             correctAnswersCount += userAnswer == correctAnswer ? 1 : 0;
         }
@@ -104,17 +106,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, resultMessageId, Toast.LENGTH_SHORT).show();
         }
     }
+
     private void setNextQuestion() {
         questionTextView.setText(questions[currentIndex].getQuestionId());
     }
 
-    //Metoda, dzięki której będzie zapamiętywane pytanie
-    // i po ponownym uruchomieniu te pytanie wyświetli się jako pierwsze
-
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d(tag ,"Wywołana została metoda: onStart");
+        Log.d(tag, "Wywołana została metoda: onStart");
     }
 
     @Override
@@ -140,19 +140,25 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.d(tag, "Wywołana została metoda: onResume");
     }
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d(tag, "Wywołana została metoda: OnSaveInstanceState");
         outState.putInt(KEY_CURRENT_INDEX, currentIndex);
     }
+
     @Override
-    protected void onActivityResult(int requestCode,int resultCode, @Nullable Intent data){
-        super.onActivityResult(requestCode,resultCode,data);
-        if(resultCode != RESULT_OK) {return;}
-        if(requestCode==REQUEST_CODE_HINT){
-            if(data==null){return;}
-            answerWasShown= data.getBooleanExtra(PromptActivity.KEY_EXTRA_ANSWER_SHOWN,false);
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode != RESULT_OK) {
+            return;
+        }
+        if (requestCode == REQUEST_CODE_HINT) {
+            if (data == null) {
+                return;
+            }
+            answerWasShown = data.getBooleanExtra(PromptActivity.KEY_EXTRA_ANSWER_SHOWN, false);
         }
     }
 }

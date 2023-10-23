@@ -14,8 +14,8 @@
     <string name="correct_ans">Poprawna odpowiedź</string>
     <string name="incorrect_ans">Błędna odpowiedź</string>
     <string name="score_message">Twój wynik: %1$d z %2$d pytań</string>
-    <string name="show_hint">Czy napewno chcesz zobaczyć podpowiedź?</string>
-    <string name="hint_button">Pokaż podpowiedź</string>
-    <string name="hint_button_main">Podpowiedź</string>
-    <string name="answer_was_shown">Podpowiedź została juz wyświetlona!</string>
+    <string name="show_hint">Czy napewno chcesz zobaczyć odpowiedź?</string>
+    <string name="hint_button">POKAŻ ODPOWIEDŹ</string>
+    <string name="hint_button_main">PODPOWIEDŹ</string>
+    <string name="answer_was_shown">Odpowiedź została juz wyświetlona!</string>
 </resources>
