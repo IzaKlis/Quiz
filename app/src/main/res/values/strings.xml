@@ -3,6 +3,7 @@
     <string name="button_true">PRAWDA</string>
     <string name="button_false">FAŁSZ</string>
     <string name="button_next">NASTĘPNE</string>
+    <string name="button_return">WRÓĆ</string>
     <string name="q1">Warszawa jest stolicą Polski</string>
     <string name="q2">Rotterdam jest stolicą Holandii</string>
     <string name="q3">Praga jest stolicą Danii</string>
@@ -13,4 +14,8 @@
     <string name="correct_ans">Poprawna odpowiedź</string>
     <string name="incorrect_ans">Błędna odpowiedź</string>
     <string name="score_message">Twój wynik: %1$d z %2$d pytań</string>
+    <string name="show_hint">Czy napewno chcesz zobaczyć podpowiedź?</string>
+    <string name="hint_button">Pokaż podpowiedź</string>
+    <string name="hint_button_main">Podpowiedź</string>
+    <string name="answer_was_shown">Podpowiedź została juz wyświetlona!</string>
 </resources>

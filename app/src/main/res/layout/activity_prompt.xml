@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".PromptActivity">
 
     <TextView
-        android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:padding="30dp"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:text="@string/show_hint"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,32 +22,20 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/hint_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_true" />
-
-        <Button
-            android:id="@+id/false_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_false" />
+            android:text="@string/hint_button" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/next_button"
+    <TextView
+        android:id="@+id/hint_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/button_next" />
-
-
+        android:padding="30dp">
+    </TextView>
     <Button
-        android:id="@+id/hint_button_main"
+        android:id="@+id/button_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/hint_button_main" />
-
-
+        android:text="@string/button_return"  />
 </LinearLayout>

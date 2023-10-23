@@ -1,13 +1,25 @@
 
+j
+java:S1192&"MDefine a constant instead of duplicating this literal "MainActivity" 7 times.(Èÿü‰8à×ªš´1
 J
-java:S1604$"(Make this anonymous inner class a lambda(Üà¨¯üÿÿÿÿ8ÿÇ±±1
+java:S16041"(Make this anonymous inner class a lambda(Üà¨¯üÿÿÿÿ8·øüš´1
 E
-java:S1604*"(Make this anonymous inner class a lambda(éäó‚8€Ç±±1
+java:S1604:"(Make this anonymous inner class a lambda(éäó‚8·øüš´1
 J
-java:S16040"(Make this anonymous inner class a lambda(ÈŒèâüÿÿÿÿ8€Ç±±1
-w
-java:S1450"ZRemove the "falseButton" field and declare it as a local variable in the relevant methods.(Ôœ8ÀÇ±±1
+java:S1604C"(Make this anonymous inner class a lambda(ÈŒèâüÿÿÿÿ8·øüš´1
+j
+java:S1659"HDeclare "falseButton" and all following declarations on a separate line.(¦Æ©œýÿÿÿÿ8Ñöš´1
+|
+java:S1450"ZRemove the "falseButton" field and declare it as a local variable in the relevant methods.(¦Æ©œýÿÿÿÿ8éøüš´1
+
+java:S1450"]Remove the "hintButtonMain" field and declare it as a local variable in the relevant methods.(¦Æ©œýÿÿÿÿ8êøüš´1
 {
-java:S1450"YRemove the "nextButton" field and declare it as a local variable in the relevant methods.(º€ü‰ùÿÿÿÿ8ÁÇ±±1
+java:S1450"YRemove the "nextButton" field and declare it as a local variable in the relevant methods.(¦Æ©œýÿÿÿÿ8êøüš´1
 {
-java:S1450"YRemove the "trueButton" field and declare it as a local variable in the relevant methods.(Ãþ×Äüÿÿÿÿ8ÁÇ±±1
+java:S1450"YRemove the "trueButton" field and declare it as a local variable in the relevant methods.(¦Æ©œýÿÿÿÿ8ëøüš´1
+Q
+java:S1611Q"/Remove the parentheses around the "v" parameter(‡©ƒÈûÿÿÿÿ8þøüš´1
+`
+java:S1874U">Remove this use of "startActivityForResult"; it is deprecated.(ßóæœüÿÿÿÿ8„ùüš´1
+g
+java:S1874•"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(¹Î¾8 Øªš´1
