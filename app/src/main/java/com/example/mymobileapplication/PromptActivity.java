@@ -9,18 +9,15 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class PromptActivity extends AppCompatActivity {
-    private boolean correctAnswer;
-    private Button hintButton;
-    private Button returnButton;
     private TextView answerTextView;
-    public static final String KEY_EXTRA_ANSWER_SHOWN = "answerShown";
-
-    //odczytujemy poprawną odpowiedź na pytanie
+    public static final String KEY_EXTRA_ANSWER_SHOWN = "answerWasShown";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Button returnButton;
+        Button hintButton;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prompt);
-        correctAnswer = getIntent().getBooleanExtra(MainActivity.KEY_EXTRA_ANSWER, true);
+        boolean correctAnswer = getIntent().getBooleanExtra(MainActivity.KEY_EXTRA_ANSWER, true);
         answerTextView = findViewById(R.id.hint_text_view);
         hintButton = findViewById(R.id.hint_button);
         returnButton = findViewById(R.id.button_return);

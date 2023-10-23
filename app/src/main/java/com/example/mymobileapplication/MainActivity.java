@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         nextButton = findViewById(R.id.next_button);
         hintButtonMain = findViewById(R.id.hint_button_main);
 
+        // Przywracanie bieżącego indeksu pytania
         if (savedInstanceState != null) {
             currentIndex = savedInstanceState.getInt(KEY_CURRENT_INDEX);
         }
