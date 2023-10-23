@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String KEY_EXTRA_ANSWER = "CorrectAnswer";
     private static final String KEY_CURRENT_INDEX = "CurrentIndex";
     private static final int REQUEST_CODE_HINT = 0;
+    private static String tag="MainActivity";
 
     private Button trueButton, falseButton, nextButton,hintButtonMain;
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("MainActivity", "Wywołana została metoda: onCreate");
+        Log.d(tag, "Wywołana została metoda: onCreate");
         setContentView(R.layout.activity_main);
         questionTextView = findViewById(R.id.question);
         trueButton = findViewById(R.id.true_button);
@@ -113,36 +114,36 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("MainActivity", "Wywołana została metoda: onStart");
+        Log.d(tag ,"Wywołana została metoda: onStart");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("MainActivity", "Wywołana została metoda: onStop");
+        Log.d(tag, "Wywołana została metoda: onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("MainActivity", "Wywołana została metoda: onDestroy");
+        Log.d(tag, "Wywołana została metoda: onDestroy");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("MainActivity", "Wywołana została metoda: onPause");
+        Log.d(tag, "Wywołana została metoda: onPause");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("MainActivity", "Wywołana została metoda: onResume");
+        Log.d(tag, "Wywołana została metoda: onResume");
     }
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.d("MainActivity", "Wywołana została metoda: OnSaveInstanceState");
+        Log.d(tag, "Wywołana została metoda: OnSaveInstanceState");
         outState.putInt(KEY_CURRENT_INDEX, currentIndex);
     }
     @Override
