@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        //Pokaż poprawną odpowiedź na pytanie
         hintButtonMain.setOnClickListener((v) -> {
             Intent intent = new Intent(MainActivity.this, PromptActivity.class);
             boolean correctAnswer = questions[currentIndex].isTrueAnswer();
